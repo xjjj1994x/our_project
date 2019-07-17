@@ -199,6 +199,29 @@ router.get('/18kbuttons', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/19jcollapse', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/19jcollapse.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/19kcollapse', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/19kcollpase.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/20jcarousel', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/20jcarousel.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/20kcarousel', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/20kcarousel.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
 
 
 app.use('/', router);
