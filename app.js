@@ -79,9 +79,15 @@ router.get('/6kgrid', function (req, res) {
 router.get('/7jgrid', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/JJJ/7jgrid.html'));
     //__dirname : It will resolve to your project folder.
+});
 
-});router.get('/7kgrid', function (req, res) {
+router.get('/7kgrid', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/7kgrid.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/16kimage', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/16kimage.html'));
     //__dirname : It will resolve to your project folder.
 });
 
