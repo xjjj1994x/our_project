@@ -177,6 +177,27 @@ router.get('/16kimage', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/17jbuttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/17jbuttons.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/17kbuttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/17kbuttons.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/18jbuttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/18jbuttons.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/18kbuttons', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/18kbuttons.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
 
 
