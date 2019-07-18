@@ -254,6 +254,17 @@ router.get('/23knavbar', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/24jexternalcontent', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/24jexternalcontent.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/24kexternalcontent', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/24kexternalcontent.html'));
+    //__dirname : It will resolve to your project folder.
+}); 
+
 router.get('/25jnavbar', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/JJJ/25jformgroup.html'));
     //__dirname : It will resolve to your project folder.
@@ -273,6 +284,17 @@ router.get('/26jnavbar', function (req, res) {
 
 router.get('/26kformgroup', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/KDH/26kformgroup.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/27jnavbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/26jformgroup.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/27kinput', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/27kinput.html'));
     //__dirname : It will resolve to your project folder.
 });
 
