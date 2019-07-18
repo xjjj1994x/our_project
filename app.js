@@ -239,10 +239,20 @@ router.get('/22jdropdown', function (req, res) {
 
 
 router.get('/22kdropdown', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/KDH/21dropdown.html'));
+    res.sendFile(path.join(__dirname + '/views/KDH/22kdropdown.html'));
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/23jnavbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/23jnavbar.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/23knavbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/23knavbar.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
 
 
