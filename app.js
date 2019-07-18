@@ -298,6 +298,17 @@ router.get('/27kinput', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/28jnavbar', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/26jformgroup.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/28kforms', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/28kforms.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/enter', function (req, res) {
     console.log(req.query);
     res.send('Request parameters : '+req.query.email+', '+req.query.password+', '+req.query.optcheck1+', '+req.query.optcheck2+', '+req.query.optradio+', '+req.query.select)
@@ -306,6 +317,11 @@ router.get('/enter', function (req, res) {
 router.get('/detail', function (req, res) {
     console.log(req.query.email);
 });
+
+router.get('/formreq', function (req, res) {
+    console.log(req.query);
+});
+
 
 app.use('/', router);
 

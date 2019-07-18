@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--html5-->
+
+<html>
+
+    <head>
+        <meta charset = "UTF-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <form action="/formreq" class="mb-5">
+                <!--이메일 패스워드 로고 없는 화면-->
+                <div class="form-group">
+                    <label><h4>Email:</h4></label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label><h4>Password:</h4></label>
+                    <input type="password" class="form-control" name="password" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <div class="form-check-label">
+                            <input type="checkbox" class=""> Remember me
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary">Submit</button>
+            </form>
+
+            <!-- 두번째 화면 이메일 패스워드 로고 있는 화면-->
+            <form action="/formreq" class="mb-5">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Email</span></div>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Pwd</span></div>
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Text</span></div>
+                    <input type="text" class="form-control" name="text" placeholder="Additional Info">
+                </div>
+                <button type="submit" class="btn btn-outline-secondary">Submit</button>
+            </form>
+
+            <!-- 세번째 화면 셀렉트와 멀티플 셀렉트-->
+            <form action="/formreq" class="mb-5">
+                <div class="form-group">
+                    <label class="">Select list (select one): </label>
+                    <select class="form-control" name="number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="">Multiple select list (hold ctrl or shift (or drag with the mouse) to select more than one): </label>
+                    <select class="form-control" multiple name="number2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline-secondary" type="submit">Submit</button>
+            </form>
+
+            <!-- 네번째 화면 여러가지 인풋 구성-->
+            <form action="/formreq" class="mb-5">
+                <div class="form-group">
+                    <label>Disabled</label>
+                    <input type="text" class="form-control" placeholder="Disabled input here..." disabled>
+                </div>
+                <div class="form-group text-success">
+                        <label>success</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control border-success">
+                            <div class="input-group-append">
+                                <span class="input-group-text">S</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-group text-warning">
+                        <label>Warning</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control border-warning">
+                            <div class="input-group-append">
+                                <span class="input-group-text">W</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-group text-danger">
+                    <label>Error</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control border-danger">
+                        <div class="input-group-append">
+                            <span class="input-group-text">X</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <span class="glyphicon glyphicon-user"></span>
+    </body>
+
+</html>
