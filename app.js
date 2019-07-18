@@ -221,6 +221,28 @@ router.get('/20kcarousel', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/21jproject', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/21jproject.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/21kproject', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/21kproject.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/22jdropdown', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/JJJ/22jdropdown.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/22kdropdown', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/KDH/21dropdown.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 
