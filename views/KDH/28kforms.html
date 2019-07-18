@@ -9,6 +9,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 
     <body>
@@ -36,11 +37,11 @@
             <!-- 두번째 화면 이메일 패스워드 로고 있는 화면-->
             <form action="/formreq" class="mb-5">
                 <div class="form-group input-group">
-                    <div class="input-group-prepend"><span class="input-group-text">Email</span></div>
+                    <div class="input-group-prepend"><button class="fas fa-user"></button></div>
                     <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <div class="form-group input-group">
-                    <div class="input-group-prepend"><span class="input-group-text">Pwd</span></div>
+                    <div class="input-group-prepend"><button class="fas fa-lock"></button></div>
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group input-group">
@@ -54,7 +55,7 @@
             <form action="/formreq" class="mb-5">
                 <div class="form-group">
                     <label class="">Select list (select one): </label>
-                    <select class="form-control" name="number">
+                    <select class="custom-select form-control" name="number">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -65,7 +66,7 @@
                 </div>
                 <div class="form-group">
                     <label class="">Multiple select list (hold ctrl or shift (or drag with the mouse) to select more than one): </label>
-                    <select class="form-control" multiple name="number2">
+                    <select class="form-control overflow-hidden" multiple name="number2">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -86,10 +87,7 @@
                 <div class="form-group text-success">
                         <label>success</label>
                         <div class="input-group">
-                            <input type="text" class="form-control border-success">
-                            <div class="input-group-append">
-                                <span class="input-group-text">S</span>
-                            </div>
+                            <input type="text" class="form-control is-valid ">
                         </div>
                     </div>
                 <div class="form-group text-warning">
@@ -103,12 +101,7 @@
                     </div>
                 <div class="form-group text-danger">
                     <label>Error</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control border-danger">
-                        <div class="input-group-append">
-                            <span class="input-group-text">X</span>
-                        </div>
-                    </div>
+                        <input type="text" class="form-control is-invalid">
                 </div>
             </form>
         </div>
